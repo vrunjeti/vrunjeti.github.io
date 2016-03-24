@@ -132,12 +132,12 @@ h3.desc{
 }
 
 a.main-link:link{
-  color: #e6e9f0;
+  color: #efefff;
   text-decoration: none;
 }
 
 a.main-link:visited{
-  color: #e6e9f0;
+  color: #efefff;
 }
 
 a.main-link:hover{
@@ -146,29 +146,29 @@ a.main-link:hover{
 }
 
 a.sub-link:link{
-  color: #b8bac0;
+  color: #e2e2e2;
   text-decoration: underline;
 }
 
 a.sub-link:visited{
-  color: #b8bac0;
+  color: #e2e2e2;
 }
 
 a.sub-link:hover{
-  color: #e6e9f0;
+  color: #efefff;
   text-decoration: underline;
 }
 
 h3.desc-fade{
   display: inline;
-  color: hsla(231,21%,37%,1);
+  color: #aaa;
   margin-left: 2px;
 }
 
 p.desc-blurb{
   margin-top: 4px;
   margin-left: 32px;
-  color: #b8bac0;
+  color: #e2e2e2;
 }
 
 h1{
@@ -183,7 +183,10 @@ h2, h3, p {
 }
 
 html, body {
-  background: #252839;
-  color: #e6e9f0;
+  color: #efefff;
   height: 100%;
+  background: #4C7795;
+  background: -webkit-linear-gradient(to left, #4C7795, #243949);
+  background:      -o-linear-gradient(to left, #4C7795, #243949);
+  background:         linear-gradient(to left, #4C7795, #243949);
 }
