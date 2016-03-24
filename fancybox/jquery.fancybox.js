@@ -877,9 +877,9 @@
 				coming.aspectRatio = true;
 			}
 
-			if (type === 'iframe' && isTouch) {
-				coming.scrolling = 'scroll';
-			}
+			// if (type === 'iframe' && isTouch) {
+			// 	coming.scrolling = 'scroll';
+			// }
 
 			// Build the neccessary markup
 			coming.wrap = $(coming.tpl.wrap).addClass('fancybox-' + (isTouch ? 'mobile' : 'desktop') + ' fancybox-type-' + type + ' fancybox-tmp ' + coming.wrapCSS).appendTo( coming.parent || 'body' );
