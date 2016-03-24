@@ -8,9 +8,13 @@
     <link rel="shortcut icon" href="images/favicon.png">
 
     <title>Varun Munjeti</title>
+
     <link href="styles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox-thumbs.css">
   </head>
   <body>
     <div class="container">
@@ -27,7 +31,7 @@
       <div class="container-bottom" id="div1">
         <div class="item">
           <i class="fa fa-file-text-o fa-fw"></i>
-          <h3 class="desc"><a class="main-link" href="resume.pdf">Resume</a></h3>
+          <h3 class="desc"><a class="main-link" href="resume.pdf" target="new">Resume</a></h3>
           <p class="desc-blurb">
             Last summer, I interned with the Storefront Infrastructure Team at Wayfair in Boston. <br>
             This summer, I'll be heading to Palo Alto to intern with the Frontend Engineering team at SalesforceIQ!
@@ -35,18 +39,18 @@
         </div>
         <div class="item">
           <i class="fa fa-github fa-fw"></i>
-          <h3 class="desc"><a class="main-link" href="https://github.com/vrunjeti">Github</a></h3>
+          <h3 class="desc"><a class="main-link" href="https://github.com/vrunjeti" target="new">Github</a></h3>
           <h3 class="desc-fade">// vrunjeti </h3>
           <p class="desc-blurb">
             My playground for trying and learning new things. <br>
-            Check out <a class="sub-link" href="https://github.com/vrunjeti/MaterialColorizeJS">MaterialColorizeJS</a>
+            Check out <a class="sub-link" href="https://github.com/vrunjeti/MaterialColorizeJS" target="new">MaterialColorizeJS</a>
             , a small library to approximate colors to their material counterparts. <br>
-            Or <a class="sub-link" href="https://github.com/cs467-12-16/campus-journeys">Campus Journeys</a>,
+            Or <a class="sub-link" href="https://github.com/cs467-12-16/campus-journeys" target="new">Campus Journeys</a>,
             a data visualization to explore trends in UIUC students' locations based on their majors and class years.</p>
         </div>
         <div class="item">
           <i class="fa fa-linkedin-square fa-fw"></i>
-          <h3 class="desc"><a class="main-link" href="https://www.linkedin.com/in/varunmunjeti">LinkedIn</a></h3>
+          <h3 class="desc"><a class="main-link" href="https://www.linkedin.com/in/varunmunjeti" target="new">LinkedIn</a></h3>
           <h3 class="desc-fade">// varunmunjeti </h3>
           <p class="desc-blurb"> My professional profile. </p>
         </div>
@@ -55,20 +59,60 @@
           <h3 class="desc">Media</h3>
           <p class="desc-blurb">
             I enjoy photography, filming, editing, and visual design.
-            Check out some of my <a class="sub-link" href="#">photos</a>,
-            a <a class="sub-link" href="https://youtu.be/sacW9_4t26M">video</a> I made for AAA UIUC's Fashion Show,
-            and one for the <a class="sub-link" href="https://youtu.be/7MYKSe9Iq0o">scene</a> I coordinated.
-            Here are a few <a class="sub-link" href="#">designs</a>
+            Check out some of my <a class="sub-link fancybox" href="images/photos/p1.jpg" rel="photo-gallery">photos</a>,
+            a <a class="sub-link fancybox-media" href="http://youtu.be/sacW9_4t26M">video</a> I made for AAA UIUC's Fashion Show,
+            and one for the <a class="sub-link fancybox-media" href="http://youtu.be/7MYKSe9Iq0o">scene</a> I coordinated.
+            Here are a few <a class="sub-link fancybox" href="images/designs/d1.jpg" rel="design-gallery">designs</a>
             I made as a PR chair for AAA UIUC and for an art class I took last semester.
           </p>
+          <div class="hide">
+            <a class="fancybox" href="images/photos/p2.jpg" rel="photo-gallery"></a>
+            <a class="fancybox" href="images/photos/p3.jpg" rel="photo-gallery"></a>
+            <a class="fancybox" href="images/photos/p4.jpg" rel="photo-gallery"></a>
+            <a class="fancybox" href="images/photos/p5.jpg" rel="photo-gallery"></a>
+            <a class="fancybox" href="images/photos/p6.jpg" rel="photo-gallery"></a>
+            <a class="fancybox" href="images/photos/p7.jpg" rel="photo-gallery"></a>
+            <a class="fancybox" href="images/photos/p8.jpg" rel="photo-gallery"></a>
+            <a class="fancybox" href="images/photos/p9.jpg" rel="photo-gallery"></a>
+          </div>
+          <div class="hide">
+            <a class="fancybox" href="images/designs/d2.jpg" rel="design-gallery"></a>
+            <a class="fancybox" href="images/designs/d3.jpg" rel="design-gallery"></a>
+          </div>
         </div>
         <div class="item">
           <i class="fa fa-medium fa-fw"></i>
-          <h3 class="desc"><a class="main-link" href="https://medium.com/@varunmunjeti">Medium</a></h3>
+          <h3 class="desc"><a class="main-link" href="https://medium.com/@varunmunjeti" target="new">Medium</a></h3>
           <h3 class="desc-fade">// @varunmunjeti </h3>
           <p class="desc-blurb"> I have a lot of thoughts pending to be shared, but it's been a busy semester, ya know? </p>
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="fancybox/jquery.fancybox.js"></script>
+    <script src="fancybox/jquery.fancybox-media.js" async defer></script>
+    <script src="fancybox/jquery.fancybox-thumbs.js" async defer></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".fancybox").fancybox({
+          maxWidth: 800,
+          nextSpeed: 200,
+          nextEffect: 'fade',
+          prevEffect: 'fade',
+          live: false,
+          helpers: {
+            thumbs: {
+              width: 50,
+              height: 50
+            }
+          }
+        })
+        $('.fancybox-media').fancybox({
+          helpers: {
+            media: {}
+          }
+        })
+      })
+    </script>
   </body>
 </html>

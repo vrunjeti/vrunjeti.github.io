@@ -102,6 +102,10 @@
           animation-delay: 1.6s;
 }
 
+.hide {
+  display: none;
+}
+
 @media screen and (max-width: 480px){
   .subtitle{
     width: 90%;
